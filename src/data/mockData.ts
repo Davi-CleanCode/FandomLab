@@ -1,6 +1,5 @@
 import { User, Post, MarketplaceItem, Badge } from '../types';
 
-// Mock badges
 const mockBadges: Badge[] = [
   { id: '1', name: 'Gamer', icon: '🎮', color: 'green', description: 'Verdadeiro gamer', rarity: 'common' },
   { id: '2', name: 'Dev Master', icon: '💻', color: 'blue', description: 'Mestre do código', rarity: 'epic' },
@@ -8,7 +7,6 @@ const mockBadges: Badge[] = [
   { id: '4', name: 'Early Adopter', icon: '👑', color: 'gold', description: 'Um dos primeiros usuários', rarity: 'legendary' },
 ];
 
-// Mock users
 export const mockUsers: User[] = [
   {
     id: '1',
@@ -22,7 +20,7 @@ export const mockUsers: User[] = [
     badges: [mockBadges[1], mockBadges[3]],
     followers: 1250,
     following: 380,
-    interests: ['gaming', 'programming', 'anime'],
+    interests: ['gaming', 'programming', 'anime', 'cinefalo', 'geek'],
     joinDate: '2023-03-15',
   },
   {
@@ -57,7 +55,6 @@ export const mockUsers: User[] = [
   },
 ];
 
-// Mock posts
 export const mockPosts: Post[] = [
   {
     id: '1',
@@ -115,7 +112,6 @@ export const mockPosts: Post[] = [
   },
 ];
 
-// Mock marketplace items
 export const mockMarketplaceItems: MarketplaceItem[] = [
   {
     id: '1',
@@ -170,12 +166,10 @@ export const mockMarketplaceItems: MarketplaceItem[] = [
     timestamp: '2024-01-12T20:15:00Z',
   },
 ];
-
-// Mock current user
 export const mockCurrentUser: User = {
   id: 'current',
-  username: 'player_one',
-  displayName: 'Player One',
+  username: 'Davi',
+  displayName: 'Davi',
   avatar: 'https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&dpr=2',
   bio: 'Gamer, developer e entusiasta de tecnologia 🚀',
   verified: false,
