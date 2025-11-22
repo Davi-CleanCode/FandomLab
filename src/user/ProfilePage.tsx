@@ -1,3 +1,5 @@
+// src/user/ProfilePage.tsx
+import React from "react";
 import { useUser } from "./useUser";
 import UserAvatar from "./UserAvatar";
 

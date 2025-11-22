@@ -6,8 +6,10 @@ export default function Header({ onNavigate, currentSection }) {
 
   return (
     <header className="flex items-center justify-between p-4">
-      <h1 className="text-white font-bold text-xl cursor-pointer"
-          onClick={() => onNavigate("feed")}>
+      <h1
+        className="text-white font-bold text-xl cursor-pointer"
+        onClick={() => onNavigate("feed")}
+      >
         FandomLab
       </h1>
 
